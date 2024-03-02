@@ -2,6 +2,13 @@
 
 
 
+## v0.1.3 (2024-03-02)
+
+### Fix
+
+* fix: cicd ([`499be5b`](https://github.com/AnyNodes/shdw-node-stats/commit/499be5b4dd9c7c01b5a7232a92c306f956c1cbae))
+
+
 ## v0.1.2 (2024-03-02)
 
 ### Fix
