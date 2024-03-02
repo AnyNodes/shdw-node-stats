@@ -2,6 +2,13 @@
 
 
 
+## v0.1.7 (2024-03-02)
+
+### Fix
+
+* fix: ui ([`98691de`](https://github.com/AnyNodes/shdw-node-stats/commit/98691de0b5998fe347ecb94b1bdc79c0ab66a76b))
+
+
 ## v0.1.6 (2024-03-02)
 
 ### Fix
