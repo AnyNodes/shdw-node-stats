@@ -2,23 +2,35 @@
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools]
+[project]
 name = "shdw-node-stats"
 version = "0.1.0"
-author = "AnyNodes"
-author_email = "anynodes@outlook.com"
+authors = [{ name = "AnyNodes", email = "anynodes@outlook.com" }]
 description = "A tool to fetch and record ShadowDrive node statistics from an API and save them to a CSV file."
-long_description = "file: README.md"
-long_description_content_type = "text/markdown"
-url = "https://github.com/AnyNodes/shdw-node-stats"
+readme = "README.md"
+license = { file="LICENSE" }
+keywords = ["API", "ShadowDrive", "statistics", "CSV"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-packages = ["."]
-install_requires = ["requests>=2.25.1"]
-scripts = ["NodeStats.py"]
+dependencies = [
+    "requests>=2.25.1"
+]
+urls = {
+    "Homepage": "https://github.com/AnyNodes/shdw-node-stats",
+    "Bug Tracker": "https://github.com/AnyNodes/shdw-node-stats/issues",
+}
+
+[project.scripts]
+NodeStats = "NodeStats.py"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=6.0",
+    "pytest-cov"
+]
 
 [tool.setuptools.dynamic]
 requires-python = ">=3.6"
