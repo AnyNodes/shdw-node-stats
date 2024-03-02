@@ -2,6 +2,13 @@
 
 
 
+## v0.2.0 (2024-03-02)
+
+### Feature
+
+* feat(ci): auto update version in toml ([`bc52863`](https://github.com/AnyNodes/shdw-node-stats/commit/bc52863deba791dce1ef5524538b9bb11889c223))
+
+
 ## v0.1.12 (2024-03-02)
 
 ### Fix
