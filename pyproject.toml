@@ -9,7 +9,7 @@ description = "A tool to fetch and record ShadowDrive node statistics from an AP
 authors = [{ name = "AnyNodes", email = "anynodes@outlook.com" }]
 readme = "README.md"
 license = { text = "MIT" }
-keywords = ["API", "ShadowDrive", "statistics", "CSV"]
+keywords = ["API", "ShadowDrive", "statistics", "CSV", "shdw", "solana", "storage"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -21,3 +21,10 @@ dependencies = [
 
 [project.scripts]
 node-stats = "NodeStats.py"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:project.version"
+branch = "main"  # or the name of your default branch
+upload_to_pypi = "false"
+commit_parser = "angular"
+commit_version_number = "true"
