@@ -61,18 +61,18 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Publish package distributions to PyPI
-      id: pypi-publish
-      uses: pypa/gh-action-pypi-publish@release/v1
-      with:
-        verbose: true
-        username: __token__
-        password: ${{ secrets.PYPI_TOKEN }}
+    # - name: Publish package distributions to PyPI
+    #   id: pypi-publish
+    #   uses: pypa/gh-action-pypi-publish@release/v1
+    #   with:
+    #     verbose: true
+    #     username: __token__
+    #     password: ${{ secrets.PYPI_TOKEN }}
         
-    # - name: Build and publish
-    #   env:
-    #     TWINE_USERNAME: __token__
-    #     TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
-    #   run: |
-    #     python -m build
-    #     twine upload dist/*
+    - name: Build package and publish to PyPI
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+      run: |
+        python -m build
+        twine upload dist/*
