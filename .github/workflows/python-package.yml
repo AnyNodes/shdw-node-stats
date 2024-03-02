@@ -34,7 +34,7 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    if: github.event_name == 'push'
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
