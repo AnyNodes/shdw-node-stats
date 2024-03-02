@@ -22,6 +22,11 @@ dependencies = [
 [project.scripts]
 node-stats = "NodeStats.py"
 
+[project.urls]
+homepage = "https://github.com/AnyNodes/shdw-node-stats#readme"
+issues = "https://github.com/AnyNodes/shdw-node-stats/issues"
+repository = "https://github.com/AnyNodes/shdw-node-stats.git"
+
 [tool.semantic_release]
 version_variable = "pyproject.toml:project.version"
 branch = "main"  # or the name of your default branch
