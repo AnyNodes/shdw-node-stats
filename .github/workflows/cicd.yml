@@ -60,6 +60,10 @@ jobs:
         TWINE_USERNAME: __token__
         TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
       run: |
-        git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+        ls
+        pwd
+        git branch
+        git pull
+        git tag
         python -m build
         twine upload dist/*
