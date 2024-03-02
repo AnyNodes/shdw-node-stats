@@ -50,13 +50,17 @@ jobs:
         python -m pip install --upgrade pip
         pip install build twine python-semantic-release
 
+    # - name: Python Semantic Release
+    #   env:
+    #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #     root_options: "-vv"
+    #   run: |
+    #     semantic-release publish
     - name: Python Semantic Release
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        root_options: "-vv"
-      run: |
-        semantic-release publish
-
+      uses: python-semantic-release/python-semantic-release@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        
     - name: Build and publish
       env:
         TWINE_USERNAME: __token__
