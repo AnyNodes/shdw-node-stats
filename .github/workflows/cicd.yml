@@ -53,9 +53,8 @@ jobs:
     - name: Semantic Release
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SEMANTIC_RELEASE_LOG_LEVEL: DEBUG
       run: |
-        semantic-release publish
+        semantic-release publish -vv
 
     - name: Build and publish
       env:
