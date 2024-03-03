@@ -2,27 +2,57 @@
 
 # shdw-node-stats
 
-This Python script, `NodeStats.py`, is designed to fetch and record information about blockchain nodes. It retrieves data such as the node's rank, total rewards, and status from a specified API endpoint, then records this information in a CSV file.
+This Python package, `shdw-node-stats`, is designed to fetch and record information about blockchain nodes. It retrieves data such as the node's rank, total rewards, and status from a specified API endpoint, then records this information in a CSV file.
 
 ## Installation
 
-To use this script, ensure you have Python installed on your system (version 3.8 or later is recommended). You will also need to install the required dependencies:
+To install `shdw-node-stats` as a package, simply use pip:
 
-```bash
-pip install -r requirements.txt
 ```
+pip install shdw-node-stats
+```
+
+This command installs `shdw-node-stats` along with all required dependencies. Ensure you have Python installed on your system (version 3.8 or later is recommended).
 
 ## Usage
 
-1. Prepare a file named `nodes.txt` or `nodes.json` containing the addresses of the nodes you wish to query. For a `.json` file, the addresses should be in an array format. For a `.txt` file, list each address on a new line.
+### As a Python Package
 
-2. Run the script using Python from the terminal or command prompt:
+After installing `shdw-node-stats` via pip, you can use it in your Python scripts as follows:
 
-```bash
-python NodeStats.py
+1. Prepare a file named `nodes.txt` or `nodes.json` containing the addresses of the nodes you wish to query.
+
+2. Use the package in your script:
+
+```python
+from shdw_node_stats import NodeStats
+
+# Assuming you have a 'nodes.txt' or 'nodes.json' file in your current directory
+node_stats = NodeStats('nodes.txt')  # or NodeStats('nodes.json')
+node_stats.run()
 ```
 
-The script will output the information for each node to the console and record the data in a CSV file named `node_rankings.csv`.
+This will fetch the node information and output it to a CSV file named `node_rankings.csv`.
+
+### As a Standalone Script
+
+If you prefer to use `NodeStats.py` as a standalone script:
+
+1. Ensure you have Python installed on your system (version 3.8 or later is recommended) and clone the repository or download the script.
+
+2. Install the required dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+3. Prepare a file named `nodes.txt` or `nodes.json` with the node addresses.
+
+4. Run the script from the terminal or command prompt:
+
+```
+python NodeStats.py
+```
 
 ## File Formats Supported
 
@@ -31,7 +61,7 @@ The script will output the information for each node to the console and record t
 
 ## Output
 
-`NodeStats.py` generates a CSV file named `node_rankings.csv`, which includes the following columns: Timestamp, Node Address, Rank, Rewards, and Status. The console output will display the node information and the total rewards accumulated by the nodes listed in the input file.
+Both usage methods generate a CSV file named `node_rankings.csv`, which includes the following columns: Timestamp, Node Address, Rank, Rewards, and Status. The console output will display the node information and the total rewards accumulated by the nodes listed in the input file.
 
 ## Community Contribution
 
@@ -53,4 +83,4 @@ Distributed under the MIT License. See [LICENSE](./LICENSE) for more information
 
 ## Note
 
-This script is intended for educational and demonstration purposes. It showcases how to interact with web APIs, process data in Python, and write output to a CSV file. Ensure you have the necessary permissions to use the API and data.
+This package/script is intended for educational and demonstration purposes. It showcases how to interact with web APIs, process data in Python, and write output to a CSV file. Ensure you have the necessary permissions to use the API and data.
