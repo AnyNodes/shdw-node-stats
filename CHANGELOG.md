@@ -2,6 +2,17 @@
 
 
 
+## v0.2.3 (2024-03-03)
+
+### Fix
+
+* fix: ci ([`df724ee`](https://github.com/AnyNodes/shdw-node-stats/commit/df724ee4ab93f6b89be0ea5116591cb0c3e4aa9e))
+
+### Test
+
+* test: test ([`3f7a303`](https://github.com/AnyNodes/shdw-node-stats/commit/3f7a303cb9382bceaf3e6c46ab051d0f3707818e))
+
+
 ## v0.2.2 (2024-03-03)
 
 ### Documentation
