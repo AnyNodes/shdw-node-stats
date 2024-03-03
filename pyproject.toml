@@ -29,6 +29,7 @@ repository = "https://github.com/AnyNodes/shdw-node-stats.git"
 
 [tool.semantic_release]
 version_variable = "pyproject.toml:project.version"
+version_toml = ["pyproject.toml:project.version"]
 branch = "main"
 upload_to_pypi = "true"
 commit_parser = "angular"
