@@ -2,6 +2,13 @@
 
 
 
+## v0.2.5 (2024-03-03)
+
+### Fix
+
+* fix: pypi source url ([`650ff96`](https://github.com/AnyNodes/shdw-node-stats/commit/650ff96aa10a9d1b501ca8f2af769b132486b838))
+
+
 ## v0.2.4 (2024-03-03)
 
 ### Fix
