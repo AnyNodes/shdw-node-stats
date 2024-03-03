@@ -2,6 +2,13 @@
 
 
 
+## v0.2.3 (2024-03-03)
+
+### Fix
+
+* fix(CI): add build commands ([`871202e`](https://github.com/AnyNodes/shdw-node-stats/commit/871202e85db12cfd7e032e337a108b579ac3512b))
+
+
 ## v0.2.2 (2024-03-03)
 
 ### Fix
