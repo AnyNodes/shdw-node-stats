@@ -2,6 +2,17 @@
 
 
 
+## v0.2.5 (2024-03-03)
+
+### Fix
+
+* fix: ci ([`955ae8b`](https://github.com/AnyNodes/shdw-node-stats/commit/955ae8bc32c56813ab724fb1bcaa414928f4c8e7))
+
+### Unknown
+
+* Update cicd.yml ([`68255cb`](https://github.com/AnyNodes/shdw-node-stats/commit/68255cbcb38f321bed7fcf4c81b11d9c7260e142))
+
+
 ## v0.2.4 (2024-03-03)
 
 ### Fix
