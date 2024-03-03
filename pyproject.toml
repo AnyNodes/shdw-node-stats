@@ -26,6 +26,7 @@ node-stats = "NodeStats.py"
 homepage = "https://github.com/AnyNodes/shdw-node-stats#readme"
 issues = "https://github.com/AnyNodes/shdw-node-stats/issues"
 repository = "https://github.com/AnyNodes/shdw-node-stats.git"
+source = "https://github.com/AnyNodes/shdw-node-stats.git"
 
 [tool.semantic_release]
 version_variable = "pyproject.toml:project.version"
