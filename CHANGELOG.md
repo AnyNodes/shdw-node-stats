@@ -2,6 +2,13 @@
 
 
 
+## v0.2.8 (2024-03-03)
+
+### Fix
+
+* fix: actions warning ([`dc51637`](https://github.com/AnyNodes/shdw-node-stats/commit/dc5163718d01d8d218d69fd77525352517625e67))
+
+
 ## v0.2.7 (2024-03-03)
 
 ### Fix
