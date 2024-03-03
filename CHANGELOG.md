@@ -2,6 +2,29 @@
 
 
 
+## v0.2.2 (2024-03-03)
+
+### Documentation
+
+* docs(readme): add badge ([`263607b`](https://github.com/AnyNodes/shdw-node-stats/commit/263607b534ce44b61d9df008bc803606ceb50b2b))
+
+### Fix
+
+* fix: ci ([`34e30f8`](https://github.com/AnyNodes/shdw-node-stats/commit/34e30f89903be320e005a1de74f07a058f5ffa1f))
+
+* fix(CI): install twine ([`95a4efb`](https://github.com/AnyNodes/shdw-node-stats/commit/95a4efbc2d31af65e85f019452e54ff12f4bfeaf))
+
+* fix: ci ([`2c3999e`](https://github.com/AnyNodes/shdw-node-stats/commit/2c3999e44674bf113e2465195d9b0ffc38fbb8e9))
+
+### Test
+
+* test: test ([`2a0048e`](https://github.com/AnyNodes/shdw-node-stats/commit/2a0048e8bea415a1918398fb973379cdf8363f58))
+
+* test: test ([`fe39d32`](https://github.com/AnyNodes/shdw-node-stats/commit/fe39d32f756118083abab73a541e7710bbfc2921))
+
+* test: test ([`357c7f3`](https://github.com/AnyNodes/shdw-node-stats/commit/357c7f3e7600fc832d9d3449a35cef72c8db7b5f))
+
+
 ## v0.2.1 (2024-03-03)
 
 ### Fix
