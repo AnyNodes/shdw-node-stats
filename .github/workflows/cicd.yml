@@ -66,5 +66,5 @@ jobs:
       run: |
         git tag
         ls dist
-        # python -m build
+        python -m build
         twine upload dist/*
