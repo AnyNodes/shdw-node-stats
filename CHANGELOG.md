@@ -2,6 +2,13 @@
 
 
 
+## v0.2.6 (2024-03-03)
+
+### Fix
+
+* fix: add usage in readme ([`61d6e4a`](https://github.com/AnyNodes/shdw-node-stats/commit/61d6e4a2af808102b10dac2cb7e05d347a789e5a))
+
+
 ## v0.2.5 (2024-03-03)
 
 ### Fix
