@@ -1,3 +1,5 @@
+![CI/CD](https://github.com/AnyNodes/shdw-node-stats/actions/workflows/cicd.yml/badge.svg)
+
 # shdw-node-stats
 
 This Python script, `NodeStats.py`, is designed to fetch and record information about blockchain nodes. It retrieves data such as the node's rank, total rewards, and status from a specified API endpoint, then records this information in a CSV file.
