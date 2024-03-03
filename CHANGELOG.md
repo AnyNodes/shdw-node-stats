@@ -2,6 +2,13 @@
 
 
 
+## v0.2.4 (2024-03-03)
+
+### Fix
+
+* fix: ci ([`229e258`](https://github.com/AnyNodes/shdw-node-stats/commit/229e25897bbff3b95207cc251edc7717c24c755f))
+
+
 ## v0.2.3 (2024-03-03)
 
 ### Fix
