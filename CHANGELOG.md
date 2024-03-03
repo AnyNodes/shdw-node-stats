@@ -2,6 +2,21 @@
 
 
 
+## v0.2.1 (2024-03-03)
+
+### Fix
+
+* fix: ci ([`e925ae4`](https://github.com/AnyNodes/shdw-node-stats/commit/e925ae432dc9a88b6e00b2fb05f59d49c9b7976f))
+
+### Test
+
+* test: test ([`0c90f81`](https://github.com/AnyNodes/shdw-node-stats/commit/0c90f814457ff562c60a6371a02c9886f3bb4c7e))
+
+### Unknown
+
+* remove commands ([`cacd568`](https://github.com/AnyNodes/shdw-node-stats/commit/cacd568d1b1edafcc0adb0e653bfbac0bcdf2b2e))
+
+
 ## v0.2.0 (2024-03-03)
 
 ### Documentation
