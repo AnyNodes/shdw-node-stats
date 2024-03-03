@@ -66,6 +66,6 @@ jobs:
         TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
       run: |
         git tag
-        ls
-        python -m build
+        ls dist
+        # python -m build
         twine upload dist/*
