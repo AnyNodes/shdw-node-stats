@@ -84,3 +84,4 @@ Distributed under the MIT License. See [LICENSE](./LICENSE) for more information
 ## Note
 
 This package/script is intended for educational and demonstration purposes. It showcases how to interact with web APIs, process data in Python, and write output to a CSV file. Ensure you have the necessary permissions to use the API and data.
+
