@@ -2,6 +2,17 @@
 
 
 
+## v0.2.9 (2024-03-07)
+
+### Fix
+
+* fix: update readme ([`b9c4ead`](https://github.com/AnyNodes/shdw-node-stats/commit/b9c4eadcd573a5571654416be859858e6584cc21))
+
+### Unknown
+
+* Add files via upload ([`9f306c3`](https://github.com/AnyNodes/shdw-node-stats/commit/9f306c323a273764c490354f196f925216142a90))
+
+
 ## v0.2.8 (2024-03-03)
 
 ### Fix
