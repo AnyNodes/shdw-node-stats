@@ -4,6 +4,13 @@ import csv
 import json
 from datetime import datetime
 
+with open('config.json', 'r') as config_file:
+    config = json.load(config_file)
+
+tg_bot_token = config.get('tg_bot_token')
+tg_chat_id = config.get('tg_chat_id')
+send_message = config.get('send_message', False)
+
 def get_node_info(node_address):
     # API endpoint for node leaderboard
     api_url = "https://shdw-rewards-oracle.shdwdrive.com/node-leaderboard"
@@ -24,7 +31,6 @@ def get_node_info(node_address):
     else:
         return None
 
-
 def record_node_data(data_filename, node_address, rank, rewards, status):
     try:
         with open(data_filename, 'x', newline='') as file:
@@ -36,6 +42,24 @@ def record_node_data(data_filename, node_address, rank, rewards, status):
     with open(data_filename, 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerow([datetime.now(), node_address, rank, rewards, status])
+
+def send_telegram_message(bot_token, chat_id, message):
+    """
+    Sends a message to a Telegram chat.
+    :param bot_token: Your Telegram bot's API token
+    :param chat_id: The chat ID of the chat where the message should be sent
+    :param message: The message text
+    """
+    send_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+    data = {
+        "chat_id": chat_id,
+        "text": message
+    }
+    try:
+        response = requests.post(send_url, data=data)
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        print(f"Error sending message: {e}")
 
 if __name__ == "__main__":
     # pre-defined file
@@ -67,6 +91,10 @@ if __name__ == "__main__":
         result = get_node_info(node_address)
         if result:
             rank, rewards, status = result
+            if status == "not_eligible" and send_message:
+                message = f"Node {node_address} is not eligible."
+                send_telegram_message(tg_bot_token, tg_chat_id, message)
+
             total_rewards += rewards  # accumulate rewards
             # print nodes info that found
             print(f"{node_address:<50}{rank:<8}{rewards:<20}{status}")

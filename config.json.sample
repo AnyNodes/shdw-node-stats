@@ -1,0 +1,5 @@
+{
+    "tg_bot_token": "your_bot_token_here",
+    "tg_chat_id": "your_chat_id_here",
+    "send_message": false
+}

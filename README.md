@@ -2,7 +2,11 @@
 
 # shdw-node-stats
 
-This Python package, `shdw-node-stats`, is designed to fetch and record information about blockchain nodes. It retrieves data such as the node's rank, total rewards, and status from a specified API endpoint, then records this information in a CSV file.
+This Python package, `shdw-node-stats`, is designed to fetch and record information about blockchain nodes. It has two features:
+
+1. Retrieve data such as the node's rank, total rewards, and status from a specified API endpoint, then records this information in a CSV file for chart purpose if you need.
+
+2. Send notification to your Telegram when the node status is `not_eligible`.
 
 ## Installation
 
@@ -15,24 +19,6 @@ pip install shdw-node-stats
 This command installs `shdw-node-stats` along with all required dependencies. Ensure you have Python installed on your system (version 3.8 or later is recommended).
 
 ## Usage
-
-### As a Python Package
-
-After installing `shdw-node-stats` via pip, you can use it in your Python scripts as follows:
-
-1. Prepare a file named `nodes.txt` or `nodes.json` containing the addresses of the nodes you wish to query.
-
-2. Use the package in your script:
-
-```python
-from shdw_node_stats import NodeStats
-
-# Assuming you have a 'nodes.txt' or 'nodes.json' file in your current directory
-node_stats = NodeStats('nodes.txt')  # or NodeStats('nodes.json')
-node_stats.run()
-```
-
-This will fetch the node information and output it to a CSV file named `node_rankings.csv`.
 
 ### As a Standalone Script
 
@@ -53,6 +39,30 @@ pip install -r requirements.txt
 ```
 python3 NodeStats.py
 ```
+
+### As a Python Package
+
+To install `shdw-node-stats` as a package, simply use pip:
+
+```
+pip install shdw-node-stats
+```
+
+This command installs `shdw-node-stats` along with all required dependencies. Ensure you have Python installed on your system (version 3.8 or later is recommended). After installing `shdw-node-stats` via pip, you can use it in your Python scripts as follows:
+
+1. Prepare a file named `nodes.txt` or `nodes.json` containing the addresses of the nodes you wish to query.
+
+2. Use the package in your script:
+
+```python
+from shdw_node_stats import NodeStats
+
+# Assuming you have a 'nodes.txt' or 'nodes.json' file in your current directory
+node_stats = NodeStats('nodes.txt')  # or NodeStats('nodes.json')
+node_stats.run()
+```
+
+This will fetch the node information and output it to a CSV file named `node_rankings.csv`.
 
 ## File Formats Supported
 
