@@ -2,6 +2,18 @@
 
 
 
+## v0.3.0 (2024-03-12)
+
+### Feature
+
+* feat(notification): send message to tg ([`fc87bd0`](https://github.com/AnyNodes/shdw-node-stats/commit/fc87bd069e8a25d492930765ce88ee1abdc81e0f))
+
+### Unknown
+
+* Merge branch &#39;main&#39; of https://github.com/AnyNodes/shdw-node-stats
+merge ([`eef467c`](https://github.com/AnyNodes/shdw-node-stats/commit/eef467c726eb92838ead26de71d8ca47831e763d))
+
+
 ## v0.2.10 (2024-03-12)
 
 ### Fix

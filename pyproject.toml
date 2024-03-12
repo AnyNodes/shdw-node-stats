@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "shdw-node-stats"
-version = "0.2.10"
+version = "0.3.0"
 description = "A tool to fetch and record ShadowDrive node statistics from an API and save them to a CSV file."
 authors = [{ name = "AnyNodes", email = "anynodes@outlook.com" }]
 readme = "README.md"
