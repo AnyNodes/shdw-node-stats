@@ -2,6 +2,19 @@
 
 
 
+## v0.2.10 (2024-03-12)
+
+### Fix
+
+* fix: fix readme ([`51274d7`](https://github.com/AnyNodes/shdw-node-stats/commit/51274d78dcbc99cccfd9d555a2d4edb8aee0fdd0))
+
+### Unknown
+
+* Create .gitignore ([`87c6e73`](https://github.com/AnyNodes/shdw-node-stats/commit/87c6e73eeb040f2f6168865de50c0b40cee156db))
+
+* Rename nodes.txt to nodes.txt.sample ([`0cc5e44`](https://github.com/AnyNodes/shdw-node-stats/commit/0cc5e445597b938322aaecd22a9065a9b094d97f))
+
+
 ## v0.2.9 (2024-03-07)
 
 ### Fix
