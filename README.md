@@ -51,7 +51,7 @@ pip install -r requirements.txt
 4. Run the script from the terminal or command prompt:
 
 ```
-python NodeStats.py
+python3 NodeStats.py
 ```
 
 ## File Formats Supported
