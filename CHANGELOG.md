@@ -2,6 +2,13 @@
 
 
 
+## v0.3.1 (2024-03-15)
+
+### Fix
+
+* fix: add new dep ([`a2dd9a9`](https://github.com/AnyNodes/shdw-node-stats/commit/a2dd9a99f01c6eb1ff7a4e72aa5cbf01732b0dc3))
+
+
 ## v0.3.0 (2024-03-12)
 
 ### Feature
