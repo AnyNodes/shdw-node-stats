@@ -16,7 +16,9 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "requests>=2.25.1"
+    "requests>=2.25.1",
+    "pandas>=1.2.3",
+    "tensorflow>=2.4.1"
 ]
 
 [project.scripts]
