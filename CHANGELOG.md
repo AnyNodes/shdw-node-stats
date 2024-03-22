@@ -2,6 +2,13 @@
 
 
 
+## v0.4.0 (2024-03-22)
+
+### Feature
+
+* feat(add column): print No. ([`2045fbd`](https://github.com/AnyNodes/shdw-node-stats/commit/2045fbd5a3a54c18b53abc1b8e3a62a9626f53d7))
+
+
 ## v0.3.2 (2024-03-15)
 
 ### Fix
