@@ -80,13 +80,14 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # print column name and define width
-    print("====================================")
+    print("=====================================================")
     print(f"Current Timestamp: {current_time}")
     print("------")
-    print(f"{'Node Address':<50}{'Rank':<8}{'Rewards':<20}{'Status'}")
-
+    print(f"{'No.':<5}{'Node Address':<50}{'Rank':<8}{'Rewards':<20}{'Status'}")
+    
     # check and print nodes stats
     total_rewards = 0  # initial total rewards
+    node_no = 1  # Start numbering from 1
     for node_address in nodes:
         result = get_node_info(node_address)
         if result:
@@ -94,15 +95,17 @@ if __name__ == "__main__":
             if status == "not_eligible" and send_message:
                 message = f"Node {node_address} is not eligible."
                 send_telegram_message(tg_bot_token, tg_chat_id, message)
-
+    
             total_rewards += rewards  # accumulate rewards
-            # print nodes info that found
-            print(f"{node_address:<50}{rank:<8}{rewards:<20}{status}")
+            # print nodes info that found with numbering
+            print(f"{node_no:<5}{node_address:<50}{rank:<8}{rewards:<20}{status}")
             # record stat to CSV file
             record_node_data(data_filename, node_address, rank, rewards, status)
         else:
-            # print nodes that not found
-            print(f"{node_address:<50}{'Not found':<8}{'Not found':<20}{'Not found'}")
+            # print nodes that not found with numbering
+            print(f"{node_no:<5}{node_address:<50}{'Not found':<8}{'Not found':<20}{'Not found'}")
+        node_no += 1  # Increment the counter
     print("------")
-    print(f"{'Total Rewards: ':<58}{total_rewards:<20}")
-    print("====================================")
+    print(f"{'Total Rewards: ':<63}{total_rewards:<20}")
+    print("=====================================================")
+
