@@ -2,6 +2,13 @@
 
 
 
+## v0.4.1 (2024-03-25)
+
+### Fix
+
+* fix: add numpy ([`8d3f1d3`](https://github.com/AnyNodes/shdw-node-stats/commit/8d3f1d3d56be099ae79e845a71a0c3cbe75cd5eb))
+
+
 ## v0.4.0 (2024-03-22)
 
 ### Feature
