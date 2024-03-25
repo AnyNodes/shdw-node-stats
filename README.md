@@ -10,6 +10,8 @@ This Python package, `shdw-node-stats`, is designed to fetch and record informat
 
 ## Installation
 
+This package has been published to pypi: https://pypi.org/project/shdw-node-stats/
+
 To install `shdw-node-stats` as a package, simply use pip:
 
 ```
